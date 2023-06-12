@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
+# 4-new_in_list.py
 
-my_list = [1, 2, 3]
-print_reversed_list_integer(my_list)
+
+def new_in_list(my_list, idx, element):
+    """Replace an element in a copied list at a specific position."""
+    if idx < 0 or idx > (len(my_list) - 1):
+        return (my_list)
+
+    copy = [x for x in my_list]
+    copy[idx] = element
+    return (copy)
