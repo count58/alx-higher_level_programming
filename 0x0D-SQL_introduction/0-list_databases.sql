@@ -1,1 +1,2 @@
-mysql -u$MYSQL_USER -p -e "SHOW DATABASES;"
+-- Used the mysql command-line to list databases
+SHOW DATABASES;
