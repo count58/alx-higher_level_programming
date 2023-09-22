@@ -75,6 +75,7 @@ ORMs are a powerful tool that can help Python developers to interact with relati
 
 
 Sources
+
 medium.com/@vikp/how-i-built-a-slack-bot-to-help-me-find-an-apartment-in-san-francisco-293045e1bf7c
 
 github.com/Coding-Crashkurse/FastAPI-Kurs
