@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-import urllib.request
+"""fetches https://intranet.hbtn.io/status"""
+from urllib import request
 
-# Fetch the URL
-with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
-
-    # Get the response body
-    response_body = response.read().decode("utf-8")
-
-    # Print the response body with tabulation before '-'
-    print("\t-" + response_body)
+if __name__ == "__main__":
+    with request.urlopen("https://intranet.hbtn.io/status") as response:
+        response = response.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(response)))
+        print("\t- content: {}".format(response))
+        print("\t- utf8 content: {}".format(response.decode(encoding='utf-8')))
