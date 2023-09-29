@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import urllib.request
 
-url = "https://alx-intranet.hbtn.io/status"
+# Fetch the URL
+with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as response:
 
-with urllib.request.urlopen(url) as response:
-    html = response.read()
+    # Get the response body
+    response_body = response.read().decode("utf-8")
 
-    print("Body response:")
-    print("\t- type:", type(html))
-    print("\t- content:", html.decode('utf-8'))
+    # Print the response body with tabulation before '-'
+    print("\t-" + response_body)
