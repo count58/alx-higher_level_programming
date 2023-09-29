@@ -9,7 +9,7 @@ url = "https://alx-intranet.hbtn.io/status"
 
 try:
     response = requests.get(url)
-    response.raise_for_status()  # Raise an HTTPError for bad responses (4xx or 5xx)
+    response.raise_for_status()
 
     content = response.text
 
